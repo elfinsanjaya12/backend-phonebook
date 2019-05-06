@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": " ",
+    "database": "db_phonebook",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "rnockdvyewjaya",
+    "password": "e4d3ea5f9f161fa99de9ecac654eedf8e99e68b2d2b4f3889775b62faf890e86",
+    "database": "dd3pgjfv82ha82",
+    "host": "ec2-174-129-10-235.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
