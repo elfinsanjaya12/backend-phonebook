@@ -109,12 +109,12 @@ exports.updateContact = (req, res) => {
   let updateContact = ({ name, phone_number } = req.body);
 
   Contact.findOne({ where: { id: { [Op.eq]: id } } })
-    .then(updateContact => {
-      if (book) {
-        return book.update(updateContact).then(updatedContact => {
+    .then(contact => {
+      if (contact) {
+        return contact.update(updateContact).then(updatedContacts => {
           res
             .status(200)
-            .json({ message: "Sucess update contact", data: updatedContact });
+            .json({ message: "Sucess update contact", data: updatedContacts });
         });
       } else {
         res.status(400).json({ message: "Contact not found" });
